@@ -70,7 +70,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(item, key) in products" :key="products.id">  <!-- 加上 :key 讓 for 迴圈跑出來的每筆資料的屬性有唯一值 -->
+                        <tr v-for="(item, key) in products" :key="item.id">  <!-- 加上 :key 讓 for 迴圈跑出來的每筆資料的屬性有唯一值 -->
                             <td> {{ item.title }} </td>
                             <td> $ {{ item.origin_price }} </td>
                             <td> $ {{ item.price }} </td>
